@@ -1,0 +1,7 @@
+[nitpick.meta]
+name = "Poetry"
+url = "https://github.com/python-poetry/poetry"
+
+["pyproject.toml".build-system]
+requires = ["poetry-core>=1.5.0"]
+build-backend = "poetry.core.masonry.api"
