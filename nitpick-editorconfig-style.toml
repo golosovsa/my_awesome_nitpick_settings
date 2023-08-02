@@ -1,4 +1,4 @@
-[poetry.meta]
+[nitpick.meta]
 name = ".editorconfig common ide config"
 
 [".editorconfig"]
