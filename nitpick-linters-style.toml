@@ -1,0 +1,8 @@
+[nitpick.meta]
+name = "Linters settings"
+
+[nitpick.styles]
+include = [
+  "./nitpick-flake8-style.toml",
+  "./nitpick-isort-style.toml",
+]
