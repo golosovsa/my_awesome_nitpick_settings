@@ -1,6 +1,9 @@
 [nitpick.meta]
 name = "isort"
 
+["pyproject.toml".tool.poetry.group.dev.dependencies]
+isort = "*"
+
 ["setup.cfg".isort]
 line_length = 120
 skip = ".tox,build"
