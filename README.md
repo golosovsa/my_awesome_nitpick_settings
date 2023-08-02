@@ -18,3 +18,14 @@
 
 * Использовать Python3.10
 
+## nitpick-linters-style.toml
+
+* Настройки линтеров
+
+### nitpick-flake8-style.toml
+
+* Настройки flake8
+
+### nitpick-isort-style.toml
+
+* Настройки isort
