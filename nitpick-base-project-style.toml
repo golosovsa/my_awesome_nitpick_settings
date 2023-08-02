@@ -1,0 +1,29 @@
+[nitpick.meta]
+name = "Base project style"
+
+[nitpick.files.absent]
+"requirements.txt" = "Используй poetry вместо pip"
+"Pipfile" = "Используй poetry вместо Pipfile"
+"Pipfile.lock" = "Используй poetry вместо Pipfile"
+
+".isort.cfg" = "Перемести настройки в setup.cfg, секцию [isort]"
+".flake8" = "Перемести настройки в setup.cfg, секцию [flake8]"
+"mypy.ini" = "Перемести настройки в setup.cfg, секцию [mypy]"
+
+[nitpick.files.present]
+"pyproject.toml" = "Не найдена информация о проекте (выполни poetry init)"
+"README.md" = "Проект должен содержать `README.md` файл (добавь его и оформи вручную)"
+".gitignore" = "Проект должен содержать `.gitignore` файл (добавь его и настрой вручную)"
+".editorconfig" = "Проект должен содержать общую для всех IDE настройку редактора кода (выполни nitpick fix)"
+".pre-commit-config.yaml" = "Файл с настройками гит-хуков должен быть в проекте (выполни nitpick fix)"
+"setup.cfg" = "Файл с настройками линтеров и форматеров должен быть в проекте (выполни nitpick fix)"
+
+[nitpick.files."setup.cfg"]
+comma_separated_values = ["flake8.ignore", "flake8.exclude",]
+
+[nitpick.styles]
+include = [
+  "./nitpick-editorconfig-style.toml",
+  "./nitpick-poetry-style.toml",
+  "./nitpick-python3.10-style.toml",
+]
