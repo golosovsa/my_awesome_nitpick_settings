@@ -1,0 +1,35 @@
+[poetry.meta]
+name = ".editorconfig common ide config"
+
+[".editorconfig"]
+root = true
+
+[".editorconfig"."*"]
+charset = "utf-8"
+end_of_line = "lf"
+insert_final_newline = true
+indent_style = "space"
+indent_size = "4"
+trim_trailing_whitespace = "true"
+
+[".editorconfig"."*.py"]
+indent_style = "space"
+indent_size = "4"
+charset = "utf-8"
+
+[".editorconfig"."*.pyi"]
+indent_style = "space"
+indent_size = "4"
+
+[".editorconfig"."{Makefile,Caddyfile}"]
+indent_style = "tab"
+
+[".editorconfig"."*.md"]
+trim_trailing_whitespace = false
+
+[".editorconfig"."*.{js,json}"]
+charset = "utf-8"
+indent_size = "2"
+
+[".editorconfig"."*.{yml,yaml,md,rb}"]
+indent_size = "2"
