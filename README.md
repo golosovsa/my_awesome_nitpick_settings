@@ -30,6 +30,10 @@
 
 * Настройки isort
 
+### nitpick-mypy-style.toml
+
+* Настройки mypy
+
 ## nitpick-pre-commit-style.toml
 
 * Настройки пре-коммитов

@@ -5,4 +5,5 @@ name = "Linters settings"
 include = [
   "./nitpick-flake8-style.toml",
   "./nitpick-isort-style.toml",
+  "./nitpick-mypy-style.toml",
 ]
