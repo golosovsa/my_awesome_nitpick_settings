@@ -29,3 +29,7 @@
 ### nitpick-isort-style.toml
 
 * Настройки isort
+
+## nitpick-pre-commit-style.toml
+
+* Настройки пре-коммитов

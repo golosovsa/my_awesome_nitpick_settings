@@ -1,0 +1,11 @@
+[[".pre-commit-config.yaml".repos]]
+repo = "local"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "flake8"
+name = "flake8"
+description = "wemake-python-styleguide enforcement"
+entry = "poetry run flake8"
+args = ["--config=setup.cfg"]
+language = "python"
+types = ["python"]
