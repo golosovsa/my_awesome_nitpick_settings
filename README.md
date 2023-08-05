@@ -37,3 +37,7 @@
 ## nitpick-pre-commit-style.toml
 
 * Настройки пре-коммитов
+
+## nitpick-django-style.toml
+
+* Настройки стилей для django

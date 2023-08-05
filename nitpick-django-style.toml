@@ -1,0 +1,12 @@
+[nitpick.meta]
+name = "Django styles"
+
+["setup.cfg".flake8]
+ignore = "D100,D101,D102,D103,D104,D105,D106,D107,D401,X100,W504,RST303,RST304,DAR103,DAR203,WPS306"
+per-file-ignores = 'service/settings/*.py:WPS226,WPS407,WPS412,WPS432 service/*/migrations/*.py:WPS102,WPS114,WPS432 tests/*.py:S101,WPS432 service/__init__.py:WPS412,WPS410'
+
+["setup.cfg".mypy]
+plugins = 'mypy_django_plugin.main, mypy_drf_plugin.main'
+
+["setup.cfg"."mypy.plugins.django-stubs"]
+django_settings_module = 'service.settings'
