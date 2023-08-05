@@ -1,12 +1,6 @@
 [nitpick.meta]
 name = "Flake8 style"
 
-["pyproject.toml".tool.poetry.group.dev.dependencies]
-flake8 = "*"
-bandit = "*"
-flake8-bandit = "*"
-wemake-python-styleguide = "*"
-
 [nitpick.files."setup.cfg"]
 comma_separated_values = ["flake8.ignore", "flake8.exclude",]
 
