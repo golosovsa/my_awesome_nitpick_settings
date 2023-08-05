@@ -6,9 +6,16 @@ repo = "local"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "flake8"
-name = "flake8"
-description = "wemake-python-styleguide enforcement"
+name = "Run flake8"
 entry = "poetry run flake8"
-args = ["--config=setup.cfg"]
 language = "python"
-types = ["python"]
+types_or = ["python", "pyi"]
+require_serial = true
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "mypy"
+name = "Run mypy"
+entry = "poetry run mypy"
+language = "python"
+types_or = ["python", "pyi"]
+require_serial = true
