@@ -2,6 +2,7 @@
 name = "isort"
 
 ["setup.cfg".isort]
+profile="wemake"
 line_length = 120
 skip = ".tox,build"
 known_first_party = "tests"
