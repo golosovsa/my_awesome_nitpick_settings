@@ -15,6 +15,7 @@ per-file-ignores = 'service/settings/*.py:WPS226,WPS407,WPS412,WPS432 **/migrati
 exclude = "manage.py,"
 
 ["setup.cfg".mypy]
+exclude = "pg_data"
 plugins = 'mypy_django_plugin.main, mypy_drf_plugin.main'
 
 ["setup.cfg"."mypy.plugins.django-stubs"]
